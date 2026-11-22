@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="D&D kulübümüzün topluluk hikâyesini, masa kurallarını ve vizyonunu keşfedin.">
+    <title>Hakkımızda | D&amp;D Tanıtım Kulübü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Lora:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Ana sayfayla ortak üst menü -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Ana menü">
+            <a class="brand" href="index.html" aria-label="D&D Kulübü ana sayfa">
+                <img class="brand-logo" src="İMG/ikontasarımı.webp" alt="">
+                <span>D&amp;D Kulübü</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="index.html#siniflar">Sınıflar</a></li>
+                <li><a class="active" href="hakkimizda.html" aria-current="page">Hakkımızda</a></li>
+                <li><a href="hakkimizda.html#kurallar">Kurallarımız</a></li>
+                <li><a href="etkinlikler.html">Etkinlikler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Topluluğun amacı ve yeni oyunculara uzanan hikâyesi -->
+        <section class="section about-story" aria-labelledby="about-title">
+            <div class="about-copy">
+                <p class="eyebrow">Aynı masada, bambaşka dünyalar</p>
+                <h1 id="about-title">Biz Kimiz?</h1>
+                <div class="about-heading-line" aria-hidden="true"></div>
+                <p class="about-lead">
+                    Biz, hayal gücünü paylaşmanın en güzel yolunun birlikte hikâye anlatmak
+                    olduğuna inanan bir maceracı topluluğuyuz.
+                </p>
+                <p>
+                    D&amp;D'yi ilk kez duyanların da yıllardır zar atanların da kendine yer
+                    bulabildiği sıcak bir masa kurmak için bir araya geldik. Amacımız,
+                    oyunun kurallarını anlaşılır kılarken yeni oyuncuların merakını ve
+                    cesaretini desteklemek.
+                </p>
+                <p>
+                    Kendi kahramanını yaratmanın heyecanını, ilk kritik zar atışının
+                    sevincini ve ortaklaşa kurulan bir dünyanın sürprizlerini herkes
+                    yaşayabilsin istiyoruz. Çünkü en unutulmaz maceralar, masadaki herkes
+                    hikâyeye katıldığında başlar.
+                </p>
+                <blockquote>
+                    “Karakterini sen yarat; macerayı birlikte yazalım.”
+                </blockquote>
+            </div>
+
+            <figure class="about-visual">
+                <img src="İMG/içerik_atmosfergörseli.webp" alt="Maceracıların bir araya gelip hikâye kurduğu fantastik bir atmosfer">
+                <figcaption>
+                    <span class="visual-mark" aria-hidden="true">✦</span>
+                    <span>Her macera bir davetle başlar.</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Dört temel masa kuralı ve topluluk vizyonu -->
+        <section class="section rules-section" id="kurallar" aria-labelledby="rules-title">
+            <div class="section-heading">
+                <p class="eyebrow">Birlikte iyi vakit geçirmek için</p>
+                <h2 id="rules-title">Oyun Kurallarımız ve Vizyonumuz</h2>
+                <div class="heading-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="rules-grid">
+                <article class="rule-card">
+                    <span class="rule-number" aria-hidden="true">01</span>
+                    <h3>Herkese Yer Var</h3>
+                    <p>
+                        Deneyim şart değil. Sorulara açık, öğrenmeye sabırlı ve yeni
+                        oyuncuların kendini rahat hissedeceği bir masa kurarız.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number" aria-hidden="true">02</span>
+                    <h3>Hikâyeyi Birlikte Kurarız</h3>
+                    <p>
+                        Her oyuncunun fikri maceraya renk katar. Birbirimizi dinler, sıra
+                        paylaşır ve başarıları takım olarak kutlarız.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number" aria-hidden="true">03</span>
+                    <h3>Saygı ve Güven Önce Gelir</h3>
+                    <p>
+                        Farklı karakterlere ve oyunculara saygı gösteririz. Herkesin
+                        sınırlarını önemser, masada güvenli ve kapsayıcı bir ortam yaratırız.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number" aria-hidden="true">04</span>
+                    <h3>Eğlence Amacımızdır</h3>
+                    <p>
+                        Kurallar oyunu destekler; merak, yaratıcılık ve dostluk macerayı
+                        güzelleştirir. Vizyonumuz, herkesin kendi efsanesini paylaşabildiği
+                        bir topluluk olmaktır.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ana sayfayla ortak alt bilgi -->
+    <footer class="site-footer">
+        <p>&copy; 2026 D&amp;D Tanıtım Kulübü</p>
+    </footer>
 </body>
 </html>
