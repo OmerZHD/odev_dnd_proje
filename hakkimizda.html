@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Lora:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Ana sayfayla ortak üst menü -->
@@ -57,12 +58,35 @@
                 </blockquote>
             </div>
 
-            <figure class="about-visual">
-                <img src="İMG/içerik_atmosfergörseli.webp" alt="Maceracıların bir araya gelip hikâye kurduğu fantastik bir atmosfer">
+            <figure class="about-visual" data-carousel role="region" aria-roledescription="slayt gösterisi" aria-label="D&D topluluğu görselleri">
+                <div class="about-slides">
+                    <div class="about-slide is-active" role="group" aria-roledescription="slayt" aria-label="1 / 4" aria-hidden="false" data-caption="Her macera bir davetle başlar.">
+                        <img src="İMG/içerik_atmosfergörseli.webp" alt="Bir D&D masasında zarlar, karakter kâğıtları ve macera kitapları">
+                    </div>
+                    <div class="about-slide" role="group" aria-roledescription="slayt" aria-label="2 / 4" aria-hidden="true" data-caption="Bazen macera, masanın etrafında başlar.">
+                        <img src="İMG/zarmasasi.webp" alt="Oyuncuların bir harita etrafında plan yaptığı fantastik bir han">
+                    </div>
+                    <div class="about-slide" role="group" aria-roledescription="slayt" aria-label="3 / 4" aria-hidden="true" data-caption="Zorlukları birlikte aşar, hikâyeyi birlikte yazarız.">
+                        <img src="İMG/ejderhaini.webp" alt="Bir ejderhayla karşılaşan maceracı kahramanlar">
+                    </div>
+                    <div class="about-slide" role="group" aria-roledescription="slayt" aria-label="4 / 4" aria-hidden="true" data-caption="Her oyuncunun hayal gücü dünyaya yeni bir renk katar.">
+                        <img src="İMG/büyücü.webp" alt="Büyü kitabı üzerinde çalışan yaşlı bir büyücü">
+                    </div>
+                </div>
                 <figcaption>
                     <span class="visual-mark" aria-hidden="true">✦</span>
-                    <span>Her macera bir davetle başlar.</span>
+                    <span id="about-slide-caption" aria-live="polite">Her macera bir davetle başlar.</span>
                 </figcaption>
+                <div class="about-slide-dots" role="group" aria-label="Slayt seçimi">
+                    <button class="about-slide-dot is-active" type="button" aria-label="1. görsele git" aria-pressed="true" data-slide-to="0"></button>
+                    <button class="about-slide-dot" type="button" aria-label="2. görsele git" aria-pressed="false" data-slide-to="1"></button>
+                    <button class="about-slide-dot" type="button" aria-label="3. görsele git" aria-pressed="false" data-slide-to="2"></button>
+                    <button class="about-slide-dot" type="button" aria-label="4. görsele git" aria-pressed="false" data-slide-to="3"></button>
+                </div>
+                <div class="about-slide-arrows">
+                    <button class="about-slide-arrow" type="button" aria-label="Önceki görsel">&larr;</button>
+                    <button class="about-slide-arrow" type="button" aria-label="Sonraki görsel">&rarr;</button>
+                </div>
             </figure>
         </section>
 
