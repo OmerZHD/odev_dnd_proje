@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="D&D kulübünün yaklaşan oyunlarına ve atölyelerine göz at, macerana katıl.">
+    <title>Etkinlikler | D&amp;D Tanıtım Kulübü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Lora:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <!-- Diğer sayfalarla ortak üst menü -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Ana menü">
+            <a class="brand" href="index.html" aria-label="D&D Kulübü ana sayfa">
+                <img class="brand-logo" src="İMG/ikontasarımı.webp" alt="">
+                <span>D&amp;D Kulübü</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="index.html#siniflar">Sınıflar</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hakkimizda.html#kurallar">Kurallarımız</a></li>
+                <li><a class="active" href="etkinlikler.html" aria-current="page">Etkinlikler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Yaklaşan oyun ve atölyeler -->
+        <section class="section events-section" aria-labelledby="events-title">
+            <div class="section-heading">
+                <p class="eyebrow">Takvimini hazırla</p>
+                <h1 id="events-title">Yaklaşan Maceralar</h1>
+                <div class="heading-line" aria-hidden="true"></div>
+                <p class="events-intro">
+                    İlk zarını mı atacaksın, yoksa yeni bir göreve mi çıkacaksın?
+                    Sana uygun masayı seç ve aramıza katıl.
+                </p>
+            </div>
+
+            <div class="events-grid">
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Tanışma</span>
+                        <time class="event-date" datetime="2026-12-05T19:00">
+                            <span class="event-day">05</span>
+                            <span class="event-month">ARALIK</span>
+                        </time>
+                    </div>
+                    <h2>Yeni Başlayanlar İçin Tanışma Gecesi</h2>
+                    <p>D&amp;D'nin temellerini öğren, karakterini tanı ve ilk maceran için ekibini bul.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 19.00</span>
+                        <span><strong>Kontenjan</strong> 8 kişi</span>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Tek gecelik oyun</span>
+                        <time class="event-date" datetime="2026-12-12T18:30">
+                            <span class="event-day">12</span>
+                            <span class="event-month">ARALIK</span>
+                        </time>
+                    </div>
+                    <h2>Tek Gecelik Macera: Kayıp Maden</h2>
+                    <p>Unutulmuş bir madenin derinliklerinde tehlikelerle yüzleş ve kayıp sırrı ortaya çıkar.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 18.30</span>
+                        <span><strong>Kontenjan</strong> 5 kişi</span>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Atölye</span>
+                        <time class="event-date" datetime="2026-12-19T14:00">
+                            <span class="event-day">19</span>
+                            <span class="event-month">ARALIK</span>
+                        </time>
+                    </div>
+                    <h2>Zar Boyama ve Karakter Yaratım Atölyesi</h2>
+                    <p>Kendi zar setine renk kat, ardından sana özel bir kahraman oluştur.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 14.00</span>
+                        <span><strong>Kontenjan</strong> 10 kişi</span>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Karakter atölyesi</span>
+                        <time class="event-date" datetime="2027-01-09T15:00">
+                            <span class="event-day">09</span>
+                            <span class="event-month">OCAK</span>
+                        </time>
+                    </div>
+                    <h2>Kahramanını Yarat</h2>
+                    <p>Irk, sınıf ve geçmiş seçimini yap; karakterinin hikâyesine ilk satırı ekle.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 15.00</span>
+                        <span><strong>Kontenjan</strong> 8 kişi</span>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Yeni başlayanlar</span>
+                        <time class="event-date" datetime="2027-01-16T18:00">
+                            <span class="event-day">16</span>
+                            <span class="event-month">OCAK</span>
+                        </time>
+                    </div>
+                    <h2>İlk Görev: Fener Tepesi</h2>
+                    <p>Yeni oyunculara özel, seçimlerin ve takım çalışmasının öne çıktığı kısa bir oyun.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 18.00</span>
+                        <span><strong>Kontenjan</strong> 5 kişi</span>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-card-heading">
+                        <span class="event-category">Topluluk oyunu</span>
+                        <time class="event-date" datetime="2027-01-23T18:30">
+                            <span class="event-day">23</span>
+                            <span class="event-month">OCAK</span>
+                        </time>
+                    </div>
+                    <h2>Kış Gecesi Tek Oturum Macerası</h2>
+                    <p>Karlarla örtülü bir kasabayı kurtarmak için ekibinle gizemli bir yolculuğa çık.</p>
+                    <div class="event-details">
+                        <span><strong>Saat</strong> 18.30</span>
+                        <span><strong>Kontenjan</strong> 6 kişi</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Etkinliklere katılım formu -->
+        <section class="section signup-section" aria-labelledby="signup-title">
+            <div class="signup-panel">
+                <div class="signup-copy">
+                    <p class="eyebrow">Masa seni bekliyor</p>
+                    <h2 id="signup-title">Maceraya Katıl</h2>
+                    <p>
+                        Kısa formu doldur; sana uygun oyun masasında yerini ayıralım.
+                        İlk kez oynuyorsan hiç sorun değil, birlikte öğreniriz.
+                    </p>
+                </div>
+
+                <form class="registration-form" id="registration-form">
+                    <div class="form-field form-field-full">
+                        <label for="full-name">Ad Soyad</label>
+                        <input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="100" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="experience">Deneyim Seviyesi</label>
+                        <select id="experience" name="experience" required>
+                            <option value="" selected disabled>Seçiniz</option>
+                            <option value="beginner">Yeni Başlayan</option>
+                            <option value="experienced">Tecrübeli</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="class-choice">Oynamak İstediğin Sınıf</label>
+                        <select id="class-choice" name="classChoice" required>
+                            <option value="" selected disabled>Seçiniz</option>
+                            <option value="fighter">Savaşçı</option>
+                            <option value="wizard">Büyücü</option>
+                            <option value="rogue">Hırsız</option>
+                            <option value="cleric">Rahip</option>
+                            <option value="undecided">Henüz karar vermedim</option>
+                        </select>
+                    </div>
+
+                    <button class="button button-primary form-submit" type="submit">Maceraya Kaydol</button>
+                    <p class="registration-message form-field-full" id="registration-message" role="status" aria-live="polite" hidden>
+                        Maceraya kaydınız alındı!
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Diğer sayfalarla ortak alt bilgi -->
+    <footer class="site-footer">
+        <p>&copy; 2026 D&amp;D Tanıtım Kulübü</p>
+    </footer>
 </body>
 </html>
