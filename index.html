@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dungeons & Dragons maceralarına, sınıflarına ve topluluğumuza modern bir giriş yapın.">
+    <title>D&D Tanıtım Kulübü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Lora:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Sayfa üstündeki ortak ana menü -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Ana menü">
+            <a class="brand" href="index.html" aria-label="D&D Kulübü ana sayfa">
+                <img class="brand-logo" src="İMG/ikontasarımı.webp" alt="">
+                <span>D&D Kulübü</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a class="active" href="index.html" aria-current="page">Ana Sayfa</a></li>
+                <li><a href="index.html#siniflar">Sınıflar</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hakkimizda.html#kurallar">Kurallarımız</a></li>
+                <li><a href="etkinlikler.html">Etkinlikler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: Kulübün ana daveti ve içeriğe yönlendirme -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Efsaneler burada yazılır</p>
+                <h1 id="hero-title">Kaderini <span>Seç.</span> Macerana Başla.</h1>
+                <p class="hero-text">
+                    Birlikte hikâyeler yazmak, sınırları zorlamak ve unutulmaz maceralara
+                    atılmak için masaya otur.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#siniflar">Sınıfları Keşfet</a>
+                    <a class="button button-secondary" href="hakkimizda.html">Kulübü Tanı</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- D&D'nin temel unsurlarını anlatan bilgi kartları -->
+        <section class="section info-section" aria-labelledby="nedir-title">
+            <div class="section-heading">
+                <p class="eyebrow">Oyunun Temeli</p>
+                <h2 id="nedir-title">D&amp;D Nedir?</h2>
+                <div class="heading-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <span>01</span>
+                    </div>
+                    <h3>Rol Yapma</h3>
+                    <p>
+                        Bir kahraman yaratır, onlara özgün bir kişilik kazandırır ve masaya
+                        getirdiğin kararlarla hikâyenin yönünü belirlersin.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <span>20</span>
+                    </div>
+                    <h3>d20 Sistemi</h3>
+                    <p>
+                        Yirmi yüzlü zar, beceri ve şansın birleştiği ana araçtır. Her atış
+                        büyük bir başarıya ya da beklenmedik bir sonuca yol açabilir.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <span>DM</span>
+                    </div>
+                    <h3>Dungeon Master</h3>
+                    <p>
+                        DM dünyayı, karakterleri ve tehlikeleri yönetir. Oyuncularla birlikte
+                        canlı, sürprizlerle dolu bir macera kurar.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Popüler sınıf kartları -->
+        <section class="section classes-section" id="siniflar" aria-labelledby="siniflar-title">
+            <div class="section-heading">
+                <p class="eyebrow">Nasıl Bir Kahraman Olacaksın?</p>
+                <h2 id="siniflar-title">Popüler Sınıflar</h2>
+                <div class="heading-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="class-grid">
+                <article class="class-card fighter">
+                    <div class="class-number" aria-hidden="true">I</div>
+                    <div class="class-symbol" aria-hidden="true">X</div>
+                    <div class="class-content">
+                        <p class="class-role">Öncü</p>
+                        <h3>Savaşçı</h3>
+                        <p>Zırhını kuşan, kılıcını çek ve cephenin en önünde dur.</p>
+                    </div>
+                </article>
+
+                <article class="class-card wizard">
+                    <div class="class-number" aria-hidden="true">II</div>
+                    <div class="class-symbol" aria-hidden="true">✦</div>
+                    <div class="class-content">
+                        <p class="class-role">Büyücü</p>
+                        <h3>Büyücü</h3>
+                        <p>Gizemli büyülerle dünyayı yeniden şekillendir.</p>
+                    </div>
+                </article>
+
+                <article class="class-card rogue">
+                    <div class="class-number" aria-hidden="true">III</div>
+                    <div class="class-symbol" aria-hidden="true">◆</div>
+                    <div class="class-content">
+                        <p class="class-role">Gölge</p>
+                        <h3>Hırsız</h3>
+                        <p>Gölgelere karış, sessizce hareket et ve tam anını seç.</p>
+                    </div>
+                </article>
+
+                <article class="class-card cleric">
+                    <div class="class-number" aria-hidden="true">IV</div>
+                    <div class="class-symbol" aria-hidden="true">†</div>
+                    <div class="class-content">
+                        <p class="class-role">Destek</p>
+                        <h3>Rahip</h3>
+                        <p>İnancının gücüyle müttefiklerini koru ve şifa ver.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 D&amp;D Tanıtım Kulübü</p>
+    </footer>
 </body>
 </html>
